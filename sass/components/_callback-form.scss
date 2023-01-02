@@ -57,25 +57,16 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
-  transition: all $transition-duration $timing-function;
+  pointer-events: none;
+  transition: $transition-duration $timing-function;
 
-  // cursor: pointer;
   &:hover,
   &:focus {
-    fill: $accent-color;
+    // fill: $accent-color;
+    transition: $transition-duration $timing-function;
     outline: transparent;
     border: 1px solid $accent-color;
   }
-
-  // &:not(:placeholder-shown):focus:valid {
-  //   color: $accent-color;
-  //   border-color: $accent-color;
-  // }
-
-  // &:not(:placeholder-shown):focus:invalid {
-  //   color: $accent-color;
-  //   border-color: $accent-color;
-  // }
 }
 
 // Иконка внутри поля
@@ -92,21 +83,11 @@
 
   transition: fill $transition-duration $timing-function;
 
-  .callback__area:focus-within & {
-    fill: $accent-color;
-  }
-
   .callback__input:hover ~ &,
   .callback__input:focus ~ & {
     fill: $accent-color;
     transition: $transition-duration $timing-function;
   }
-
-  // &:hover,
-  // &:focus {
-  //   fill: $accent-color;
-  // }
-  // transition: $transition-duration $timing-function;
 }
 
 // Обёртка-лейбл для поля комментария
