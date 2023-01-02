@@ -1,21 +1,20 @@
+// Переменные для цветов
+
 $primary-text-color: #757575;
-$secondary-text-color: #212121;
-$primary-white-color: #ffffff;
+$second-text-color: #212121;
 $accent-color: #2196f3;
 $seconadry-accent-color: rgba(24, 140, 232, 1);
-$footer-text-color: rgba(255, 255, 255, 0.6);
-$hero-bg-color: #c4c4c4;
-$secondary-bg-color: #f5f4fa;
-$work-title-bg: rgba(47, 48, 58, 0.8);
-$footer-bg-color: #2f303a;
-$footer-socials-color: rgba(255, 255, 255, 0.1);
-$portfolio-item-bg: #eeeeee;
-$icon-socials-color: #afb1b8;
-
-// animations
-$function-duration: 250ms;
-$function-timing: cubic-bezier(0.4, 0, 0.2, 1);
+$primary-bg-color: #ffffff;
+$second-bg-color: #2f303a;
+$additional-background-color: #f5f4fa;
+$svg-color: #afb1b8;
 
 // fonts
-$main-font: 'Roboto', sans-serif;
-$logo-font: 'Raleway', sans-serif;
+
+$primary-font: Roboto, sans-serif;
+$secondary-font: Raleway, sans-serif;
+
+// animations
+
+$transition-duration: 250ms;
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);

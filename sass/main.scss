@@ -1,13 +1,13 @@
-@import "./base/normalize";
-@import "./utils/variables";
-@import "./utils/_placeholders";
-@import "./components/shared/page-body";
-@import "./components/shared/page-header";
-@import "./components/studio/section-hero";
-@import "./components/shared/page-modal";
-@import "./components/studio/section-features";
-@import "./components/studio/section-work";
-@import "./components/studio/section-team";
-@import "./components/studio/section-clients";
-@import "./components/shared/page-footer";
-@import "./components/portfolio/section-portfolio";
+@import "./utils/module";
+
+@import "./base/module";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/features";
+@import "./layout/photos";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
+
+@import './components/module';

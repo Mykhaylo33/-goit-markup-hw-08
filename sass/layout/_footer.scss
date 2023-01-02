@@ -1,0 +1,27 @@
+// Футер
+
+.footer {
+  padding: 60px 0px;
+
+  background-color: $second-bg-color;
+
+  color: $primary-bg-color;
+}
+
+// Обёртка для блоков в футере
+
+.footer-blocks {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include flexbox(space-between, baseline);
+  }
+}
