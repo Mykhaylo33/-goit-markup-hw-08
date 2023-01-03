@@ -1,0 +1,59 @@
+.contact-header {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__item:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &__item {
+      padding-bottom: 10px;
+    }
+  }
+  &__icon {
+    margin-right: 10px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &--envelope {
+      width: 16px;
+      height: 12px;
+    }
+    &--smartphone {
+      width: 10px;
+      height: 16px;
+    }
+    &:focus,
+    &:hover {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $text-color;
+    fill: $text-color;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: $logo-color;
+      fill: $logo-color;
+    }
+  }
+}

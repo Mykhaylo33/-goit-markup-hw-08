@@ -1,13 +1,18 @@
-@import "./utils/module";
-
-@import "./base/module";
-
-@import "./layout/header";
-@import "./layout/hero";
-@import "./layout/features";
-@import "./layout/photos";
-@import "./layout/team";
-@import "./layout/clients";
-@import "./layout/footer";
-
-@import './components/module';
+@import "utils/vars";
+@import "components/logo";
+@import "components/current";
+@import "components/nav";
+@import "components/contact";
+@import "components/hero";
+@import "components/quality";
+@import "components/specifics";
+@import "components/team";
+@import "components/social";
+@import "components/klients";
+@import "components/bottom";
+@import "components/social-bottom";
+@import "components/form-bottom";
+@import "components/portfolio/portfolio";
+@import "components/portfolio/button-portfolio";
+@import "components/modal";
+@import "components/mobile-menu";
