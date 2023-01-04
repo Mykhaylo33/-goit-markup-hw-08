@@ -19,7 +19,7 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
-  &__sate {
+  &__site {
     display: block;
     font-weight: 500;
     text-decoration: none;
@@ -31,7 +31,7 @@
       color: $logo-color;
     }
   }
-  &__sate:not(:last-child) {
+  &__site:not(:last-child) {
     margin-bottom: 32px;
   }
 }

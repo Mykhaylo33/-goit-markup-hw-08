@@ -44,7 +44,7 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .conteiner__header {
+  .header__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -54,26 +54,26 @@ img {
   }
 }
 @media screen and (max-width: 767px) {
-  .conteiner__header {
+  .header__container {
     position: relative;
   }
 }
-.conteiner {
+.container {
   margin: 0 auto;
   padding: 0 15px;
 }
 @media screen and (max-width: 767px) {
-  .conteiner {
+  .container {
     max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
-  .conteiner {
+  .container {
     width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .conteiner {
+  .container {
     width: 1200px;
   }
 }
@@ -109,7 +109,7 @@ img {
   color: #2196f3;
 }
 
-a.nav__sate-current {
+a.nav__site-current {
   color: #2196f3;
 }
 
@@ -152,7 +152,7 @@ a.nav__sate-current {
 .nav__item:not(:last-child) {
   margin-right: 50px;
 }
-.nav__sate {
+.nav__site {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -164,7 +164,7 @@ a.nav__sate-current {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav__sate:hover, .nav__sate:focus {
+.nav__site:hover, .nav__site:focus {
   color: #2196f3;
 }
 
@@ -346,18 +346,18 @@ a.nav__sate-current {
   opacity: 1;
 }
 
-.quality {
+.features {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
-  .quality {
+  .features {
     padding-top: 94px;
     padding-bottom: 94px;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .quality__direction {
+  .features__direction {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -367,24 +367,24 @@ a.nav__sate-current {
   }
 }
 @media (min-width: 1200px) {
-  .quality__direction {
+  .features__direction {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .quality__item {
+  .features__item {
     -ms-flex-preferred-size: calc(50% - 15px);
         flex-basis: calc(50% - 15px);
   }
 }
 @media (min-width: 1200px) {
-  .quality__item:not(:last-child) {
+  .features__item:not(:last-child) {
     margin-right: 30px;
   }
 }
-.quality__card {
+.features__card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -398,17 +398,17 @@ a.nav__sate-current {
   background-color: #f5f4fa;
 }
 @media screen and (min-width: 1200px) {
-  .quality .quality__card {
+  .features .features__card {
     max-width: 270px;
   }
 }
-.quality__icon {
+.features__icon {
   width: 70px;
   height: 70px;
   padding: 0;
   margin: 0;
 }
-.quality__name {
+.features__name {
   margin-top: 30px;
   font-weight: 700;
   line-height: 1.14;
@@ -416,11 +416,11 @@ a.nav__sate-current {
   color: #212121;
 }
 @media screen and (max-width: 767px) {
-  .quality .quality__name {
+  .features .features__name {
     text-align: center;
   }
 }
-.quality-info {
+.features-info {
   margin-top: 10px;
   line-height: 1.71;
 }
@@ -646,7 +646,7 @@ a.nav__sate-current {
         flex-basis: 16.66%;
   }
 }
-.klients__sate {
+.klients__site {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -664,7 +664,7 @@ a.nav__sate-current {
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.klients__sate:hover, .klients__sate:focus {
+.klients__site:hover, .klients__site:focus {
   fill: #2196f3;
   border: 1px solid #2196f3;
 }
@@ -693,12 +693,12 @@ a.nav__sate-current {
   }
 }
 @media (max-width: 767px) {
-  .conteiner-bottom {
+  .container-bottom {
     text-align: center;
   }
 }
 @media (min-width: 1200px) {
-  .conteiner-bottom {
+  .container-bottom {
     width: 1200px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1400,7 +1400,7 @@ input::placeholder.form-bottom__input {
     display: none;
   }
 }
-.mobile__sate {
+.mobile__site {
   display: block;
   font-weight: 500;
   text-decoration: none;
@@ -1409,10 +1409,10 @@ input::placeholder.form-bottom__input {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mobile__sate:hover, .mobile__sate:focus {
+.mobile__site:hover, .mobile__site:focus {
   color: #2196f3;
 }
-.mobile__sate:not(:last-child) {
+.mobile__site:not(:last-child) {
   margin-bottom: 32px;
 }
 

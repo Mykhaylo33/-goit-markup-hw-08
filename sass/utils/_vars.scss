@@ -52,18 +52,18 @@ img {
   overflow: hidden;
 }
 @media screen and (min-width: 768px) {
-  .conteiner__header {
+  .header__container {
     display: flex;
     align-items: center;
   }
 }
 @media screen and (max-width: 767px) {
-  .conteiner__header {
+  .header__container {
     position: relative;
   }
 }
 
-.conteiner {
+.container {
   margin: 0 auto;
   padding: 0 15px;
 

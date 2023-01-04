@@ -1,4 +1,4 @@
-.quality {
+.features {
   padding-top: $paddidng-top-section-mobile;
   padding-bottom: $paddidng-bottom-section-mobile;
   @media screen and (min-width: 1200px) {
@@ -36,7 +36,7 @@
     background-color: $team-color;
   }
   @media screen and (min-width: 1200px) {
-    .quality__card {
+    .features__card {
       max-width: 270px;
     }
   }
@@ -55,7 +55,7 @@
     color: $titel-color;
   }
   @media screen and (max-width: 767px) {
-    .quality__name {
+    .features__name {
       text-align: center;
     }
   }
