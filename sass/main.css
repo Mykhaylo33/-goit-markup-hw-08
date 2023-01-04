@@ -111,7 +111,7 @@ a.nav__sate-current {
   line-height: 1.14;
   text-decoration: none;
   letter-spacing: 0.02em;
-  color: var(--titel-color);
+  color: var(--title-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav__sate:hover, .nav__sate:focus {
@@ -170,7 +170,7 @@ a.nav__sate-current {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.hero__titel {
+.hero__title {
   width: 696px;
   margin: auto;
   font-weight: 900;
@@ -246,7 +246,7 @@ a.nav__sate-current {
 .specifics {
   padding-bottom: 94px;
 }
-.specifics__titel {
+.specifics__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -285,7 +285,7 @@ a.nav__sate-current {
   padding-bottom: 94px;
   background-color: #f5f4fa;
 }
-.team__titel {
+.team__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -366,7 +366,7 @@ a.nav__sate-current {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.klients__titel {
+.klients__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -454,7 +454,7 @@ a.nav__sate-current {
   display: block;
   margin-left: 70px;
 }
-.bottom_social__titel {
+.bottom_social__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -720,7 +720,7 @@ input::placeholder.form-bottom__input {
 .modal-form {
   padding: 40px;
 }
-.modal-form__titel {
+.modal-form__title {
   font-weight: 700;
   margin-bottom: 12px;
   font-size: 20px;

@@ -7,7 +7,7 @@
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
   }
-  &__titel {
+  &__title {
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
@@ -32,7 +32,7 @@
     background-color 250ms $time-animacion;
   &:focus,
   &:hover {
-    background-color: $logo-color;
+    background-color: $accent-color;
     color: $primary-white-color;
   }
 }

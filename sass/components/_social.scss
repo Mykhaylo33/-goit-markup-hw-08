@@ -22,7 +22,7 @@
       background-color 250ms $time-animacion;
     &:focus,
     &:hover {
-      background-color: $logo-color;
+      background-color: $accent-color;
       color: $primary-white-color;
     }
   }
@@ -36,7 +36,7 @@
     &:focus,
     &:hover {
       fill: $primary-white-color;
-      background-color: $logo-color;
+      background-color: $accent-color;
     }
   }
 }

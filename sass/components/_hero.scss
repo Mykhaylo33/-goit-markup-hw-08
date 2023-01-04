@@ -22,7 +22,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  &__titel {
+  &__title {
     max-width: 696px;
     margin: auto;
     font-size: 26px;
@@ -43,7 +43,7 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/Header-tablet.jpg);
-    &__titel {
+    &__title {
       max-width: 450px;
       margin: auto;
     }
@@ -62,7 +62,7 @@
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    &__titel {
+    &__title {
       font-size: 44px;
       line-height: 1.36;
     }
@@ -99,7 +99,7 @@
   border-radius: 4px;
   cursor: pointer;
   color: $primary-white-color;
-  background-color: $logo-color;
+  background-color: $accent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);

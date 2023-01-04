@@ -6,15 +6,15 @@
     padding-bottom: $paddidng-bottom-section;
   }
 
-  &__titel {
+  &__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    color: $titel-color;
+    color: $title-color;
   }
   @media screen and (max-width: 767px) {
-    .clients__titel {
+    .clients__title {
       font-size: 28px;
     }
   }
@@ -62,8 +62,8 @@
     transition: border 250ms $time-animacion, fill 250ms $time-animacion;
     &:hover,
     &:focus {
-      fill: $logo-color;
-      border: 1px solid $logo-color;
+      fill: $accent-color;
+      border: 1px solid $accent-color;
     }
   }
 }

@@ -160,7 +160,7 @@ a.nav__site-current {
   line-height: 1.14;
   text-decoration: none;
   letter-spacing: 0.02em;
-  color: var(--titel-color);
+  color: var(--title-color);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -272,7 +272,7 @@ a.nav__site-current {
     background-image: url(../images/Header-mobile@2x.jpg);
   }
 }
-.hero__titel {
+.hero__title {
   max-width: 696px;
   margin: auto;
   font-size: 26px;
@@ -290,7 +290,7 @@ a.nav__site-current {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Header-tablet.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-tablet.jpg);
   }
-  .hero__titel {
+  .hero__title {
     max-width: 450px;
     margin: auto;
   }
@@ -308,7 +308,7 @@ a.nav__site-current {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Header-desktop.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-desktop.jpg);
   }
-  .hero__titel {
+  .hero__title {
     font-size: 44px;
     line-height: 1.36;
   }
@@ -497,7 +497,7 @@ a.nav__site-current {
   font-size: 16px;
   line-height: 1.19;
 }
-.team__titel {
+.team__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -598,7 +598,7 @@ a.nav__site-current {
     padding-bottom: 94px;
   }
 }
-.clients__titel {
+.clients__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -606,7 +606,7 @@ a.nav__site-current {
   color: #212121;
 }
 @media screen and (max-width: 767px) {
-  .clients .clients__titel {
+  .clients .clients__title {
     font-size: 28px;
   }
 }
@@ -778,14 +778,14 @@ a.nav__site-current {
     margin-left: 70px;
   }
 }
-.footer_social__titel {
+.footer_social__title {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: #ffffff;
 }
 @media screen and (max-width: 1199px) {
-  .footer_social__titel {
+  .footer_social__title {
     text-align: center;
   }
 }
@@ -1205,7 +1205,7 @@ input::placeholder.form-bottom__input {
 .modal-form {
   padding: 40px;
 }
-.modal-form__titel {
+.modal-form__title {
   font-weight: 700;
   margin-bottom: 12px;
   font-size: 20px;
@@ -1222,11 +1222,11 @@ input::placeholder.form-bottom__input {
   outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  cursor: pointer;
+  pointer-events: none;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-form__input:focus {
+.modal-form__input:hover, .modal-form__input:focus {
   border: 1px solid #2196f3;
 }
 .modal-form__textarea {
@@ -1237,13 +1237,13 @@ input::placeholder.form-bottom__input {
   margin-top: 4px;
   resize: none;
   outline: none;
-  cursor: pointer;
+  pointer-events: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-form__textarea:focus {
+.modal-form__textarea:hover, .modal-form__textarea:focus {
   border: 1px solid #2196f3;
 }
 .modal-form__label {
@@ -1264,6 +1264,7 @@ input::placeholder.form-bottom__input {
 }
 .modal-form__icon {
   position: absolute;
+  pointer-events: none;
   width: 18px;
   height: 18px;
   top: 35px;
@@ -1283,7 +1284,7 @@ input::placeholder.form-bottom__input {
   letter-spacing: 0.06em;
   color: #ffffff;
   background: #2196f3;
-  cursor: pointer;
+  pointer-events: none;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1302,7 +1303,8 @@ input::placeholder.form-bottom__input {
           justify-content: center;
 }
 
-.modal-form__input:focus ~ .modal-form__icon {
+.modal-form__input:focus ~ .modal-form__icon,
+.modal-form__input:hover ~ .modal-form__icon {
   color: #2196f3;
   fill: #2196f3;
 }
@@ -1444,7 +1446,7 @@ input::placeholder.form-bottom__input {
 }
 .mobile-header__link:hover, .mobile-header__link:focus {
   color: #2196f3;
-  font-size: 40px;
+  font-size: 34px;
 }
 
 .mobile-social-list {
