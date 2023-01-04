@@ -1,17 +1,20 @@
 $text-color: #757575;
 $logo-color: #2196f3;
-$bg-logo-color:#188CE8;
-$$primary-white-color: #ffffff;
+$bg-logo-color: #188ce8;
+$primary-white-color: #ffffff;
 $titel-color: #212121;
 $fon-hero-color: #2f303a;
 $team-color: #f5f4fa;
 $icon-color: #afb1b8;
 $border-portfolio-color: #eeeeee;
+$footer-address-color:rgba(255, 255, 255, 0.6);
+
 $paddidng-top-section: 94px;
 $paddidng-bottom-section: 94px;
 $paddidng-top-section-mobile: 60px;
 $paddidng-bottom-section-mobile: 60px;
 $time-animacion: cubic-bezier(0.4, 0, 0.2, 1);
+
 body {
   font-family: Roboto, sans-serif;
   font-weight: normal;
@@ -19,7 +22,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $text-color;
-  background-color: $$primary-white-color;
+  background-color: $primary-white-color;
 }
 
 h1,

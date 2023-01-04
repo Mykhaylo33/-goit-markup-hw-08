@@ -3,7 +3,7 @@
   padding-bottom: $paddidng-bottom-section-mobile;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: $$primary-white-color;
+  color: $primary-white-color;
   background-color: $fon-hero-color;
   &__logo {
     display: inline-block;
@@ -12,7 +12,7 @@
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
-    color: $$primary-white-color;
+    color: $primary-white-color;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -41,7 +41,7 @@
 }
 
 .footer__logo {
-  color: $$primary-white-color;
+  color: $primary-white-color;
 }
 .address {
   @media screen and(max-width:767px) {
@@ -61,27 +61,19 @@
     font-style: normal;
     text-decoration: none;
     line-height: 1.71;
-    color: var(--$primary-white-color);
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    transition: color 250ms $time-animacion;
-    &:hover,
-    &:focus {
-      color: $logo-color;
-    }
+    color: $primary-white-color;
   }
 }
 
-.footer-contact {
+.footer-contact__link {
+  display: inline-block;
+  align-items: center;
+
+  font-weight: 400;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   font-style: normal;
 
-  display: inline-block;
-  font-weight: 400;
-  line-height: 1.71;
+  color: $footer-address-color;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.6);
-  transition: color 250ms $time-animacion;
-  &:hover,
-  &:focus {
-    color: $logo-color;
-  }
 }

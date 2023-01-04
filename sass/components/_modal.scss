@@ -23,7 +23,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: $$primary-white-color;
+  background-color: $primary-white-color;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -43,7 +43,7 @@
   padding: 6px;
   cursor: pointer;
   border-radius: 50%;
-  background: $$primary-white-color;
+  background: $primary-white-color;
   fill: #000000;
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: fill 250ms $time-animacion;
@@ -139,7 +139,7 @@
     border: none;
     border-radius: 4px;
     letter-spacing: 0.06em;
-    color: $$primary-white-color;
+    color: $primary-white-color;
     background: $logo-color;
     cursor: pointer;
     transition: box-shadow 250ms $time-animacion;

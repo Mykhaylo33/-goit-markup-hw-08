@@ -74,7 +74,7 @@
     text-decoration: none;
     font-size: 18px;
     color: $text-color;
-    background-color: $$primary-white-color;
+    background-color: $primary-white-color;
     transition: color 250ms $time-animacion,
       background-color 250ms $time-animacion;
 
@@ -113,7 +113,7 @@
   padding: 0;
   margin: 0;
   border: none;
-  background: $$primary-white-color;
+  background: $primary-white-color;
   fill: currentColor;
   transition: fill 250ms $time-animacion;
 
@@ -136,7 +136,7 @@
   height: 40px;
   border: none;
   fill: $titel-color;
-  background: $$primary-white-color;
+  background: $primary-white-color;
   transition: fill 250ms $time-animacion;
   &:focus,
   &:hover {
