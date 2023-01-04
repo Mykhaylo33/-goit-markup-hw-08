@@ -425,17 +425,17 @@ a.nav__site-current {
   line-height: 1.71;
 }
 
-.specifics {
+.work {
   padding-bottom: 94px;
 }
-.specifics__titel {
+.work__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: #212121;
 }
-.specifics__list {
+.work__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -443,14 +443,14 @@ a.nav__site-current {
       flex-basis: calc((100% - 60px) / 3);
   margin-top: 50px;
 }
-.specifics__item:not(:last-child) {
+.work__item:not(:last-child) {
   margin-right: 30px;
 }
-.specifics__card {
+.work__card {
   position: relative;
   display: block;
 }
-.specifics__name {
+.work__name {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -466,7 +466,7 @@ a.nav__site-current {
 }
 
 @media (max-width: 1198px) {
-  .specifics {
+  .work {
     display: none;
   }
 }
