@@ -17,13 +17,13 @@
     border-radius: 50%;
     border: none;
     color: $icon-color;
-    background-color: $fon-color;
+    background-color: $$primary-white-color;
     transition: color 250ms $time-animacion,
       background-color 250ms $time-animacion;
     &:focus,
     &:hover {
       background-color: $logo-color;
-      color: $fon-color;
+      color: $$primary-white-color;
     }
   }
 
@@ -35,7 +35,7 @@
       background-color 250ms $time-animacion;
     &:focus,
     &:hover {
-      fill: $fon-color;
+      fill: $$primary-white-color;
       background-color: $logo-color;
     }
   }

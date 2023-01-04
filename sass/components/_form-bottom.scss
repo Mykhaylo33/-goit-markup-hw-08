@@ -9,7 +9,7 @@
   font-weight: 700;
   margin-bottom: 20px;
   text-transform: uppercase;
-  color: $fon-color;
+  color: $$primary-white-color;
   @media screen and (min-width: 1200px) {
     margin-bottom: 8px;
   }
@@ -71,7 +71,7 @@ input::placeholder.form-bottom__input {
   justify-content: center;
   cursor: pointer;
   background: $logo-color;
-  color: $fon-color;
+  color: $$primary-white-color;
   transition: box-shadow 250ms $time-animacion;
   border: none;
   border-radius: 4px;
@@ -94,5 +94,5 @@ input::placeholder.form-bottom__input {
   margin-left: 10px;
   width: 24px;
   height: 24px;
-  fill: $fon-color;
+  fill: $$primary-white-color;
 }

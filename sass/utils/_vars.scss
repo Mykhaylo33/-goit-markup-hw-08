@@ -1,6 +1,7 @@
 $text-color: #757575;
 $logo-color: #2196f3;
-$fon-color: #ffffff;
+$bg-logo-color:#188CE8;
+$$primary-white-color: #ffffff;
 $titel-color: #212121;
 $fon-hero-color: #2f303a;
 $team-color: #f5f4fa;
@@ -18,7 +19,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $text-color;
-  background-color: $fon-color;
+  background-color: $$primary-white-color;
 }
 
 h1,

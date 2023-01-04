@@ -11,7 +11,7 @@
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
-    color: $fon-color;
+    color: $$primary-white-color;
     @media screen and (max-width: 1199px) {
       text-align: center;
     }
@@ -26,14 +26,14 @@
   justify-content: center;
   border-radius: 50%;
   border: none;
-  color: $fon-color;
+  color: $$primary-white-color;
   background: rgba(255, 255, 255, 0.1);
   transition: color 250ms $time-animacion,
     background-color 250ms $time-animacion;
   &:focus,
   &:hover {
     background-color: $logo-color;
-    color: $fon-color;
+    color: $$primary-white-color;
   }
 }
 @media (max-width: 767px) {
