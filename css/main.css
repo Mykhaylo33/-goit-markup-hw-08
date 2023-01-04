@@ -586,17 +586,17 @@ a.nav__site-current {
   background-color: #2196f3;
 }
 
-.klients {
+.clients {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 @media (min-width: 1200px) {
-  .klients {
+  .clients {
     padding-top: 94px;
     padding-bottom: 94px;
   }
 }
-.klients__titel {
+.clients__titel {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -604,11 +604,11 @@ a.nav__site-current {
   color: #212121;
 }
 @media screen and (max-width: 767px) {
-  .klients .klients__titel {
+  .clients .clients__titel {
     font-size: 28px;
   }
 }
-.klients__list {
+.clients__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -618,35 +618,35 @@ a.nav__site-current {
   margin-top: 50px;
 }
 @media (min-width: 1200px) {
-  .klients__list {
+  .clients__list {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
 }
 @media (max-width: 767px) {
-  .klients .klients__list {
+  .clients .clients__list {
     margin-top: 30px;
   }
 }
 @media (max-width: 767px) {
-  .klients .klients__item {
+  .clients .clients__item {
     -ms-flex-preferred-size: calc(50% - 15px);
         flex-basis: calc(50% - 15px);
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
-  .klients .klients__item {
+  .clients .clients__item {
     -ms-flex-preferred-size: calc(33.33% - 20px);
         flex-basis: calc(33.33% - 20px);
   }
 }
 @media (min-width: 1200px) {
-  .klients .klients__item {
+  .clients .clients__item {
     -ms-flex-preferred-size: 16.66%;
         flex-basis: 16.66%;
   }
 }
-.klients__site {
+.clients__site {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -664,7 +664,7 @@ a.nav__site-current {
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.klients__site:hover, .klients__site:focus {
+.clients__site:hover, .clients__site:focus {
   fill: #2196f3;
   border: 1px solid #2196f3;
 }

@@ -1,4 +1,4 @@
-.klients {
+.clients {
   padding-top: $paddidng-top-section-mobile;
   padding-bottom: $paddidng-bottom-section-mobile;
   @media (min-width: 1200px) {
@@ -14,7 +14,7 @@
     color: $titel-color;
   }
   @media screen and (max-width: 767px) {
-    .klients__titel {
+    .clients__titel {
       font-size: 28px;
     }
   }
@@ -29,23 +29,23 @@
     }
   }
   @media (max-width: 767px) {
-    .klients__list {
+    .clients__list {
       margin-top: 30px;
     }
   }
 
   @media (max-width: 767px) {
-    .klients__item {
+    .clients__item {
       flex-basis: calc(50% - 15px);
     }
   }
   @media (min-width: 768px) and (max-width: 1199px) {
-    .klients__item {
+    .clients__item {
       flex-basis: calc(33.33% - 20px);
     }
   }
   @media (min-width: 1200px) {
-    .klients__item {
+    .clients__item {
       flex-basis: calc(16.66%);
     }
   }
