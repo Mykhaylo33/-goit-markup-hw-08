@@ -1,0 +1,155 @@
+.backdrop-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  overflow-y: scroll;
+  background: rgba(233, 168, 168, 0.2);
+
+  opacity: 1;
+  @include transition(opacity);
+
+  &--is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 48px 40px 48px 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background-color: $main-background-color;
+  transform: translateX(0);
+  @include transition(transform);
+
+  .backdrop-menu--is-hidden & {
+    transform: translateX(100%);
+  }
+}
+
+.menu__button-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  @include transition(color);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.icon-cross {
+  width: 40px;
+  height: 40px;
+  fill: currentColor;
+}
+
+.icon-menu {
+  width: 40px;
+  height: 40px;
+  fill: currentColor;
+}
+
+.menu__nav-list {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 4;
+}
+
+.menu__nav-item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.menu__nav-link {
+  display: block;
+  font-weight: $average-font-weight;
+  font-size: 40px;
+  line-height: 1.17;
+  padding: 3px 0;
+  letter-spacing: 0.02em;
+  color: $main-color;
+  @include transition(color);
+
+  @media screen and (max-width: 479px) {
+    font-size: 8.5vw;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.menu_secon-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  justify-content: space-between;
+}
+
+.menu__contact-link {
+  display: block;
+  font-weight: $average-font-weight;
+  letter-spacing: 0.02em;
+}
+
+.menu__contact-link--blue {
+  font-size: 34px;
+  line-height: 1.8;
+  color: $accent-color;
+  padding: 16px 0;
+  @media screen and (max-width: 479px) {
+    font-size: 7vw;
+  }
+}
+
+.menu__contact-link--dark {
+  font-size: 24px;
+  line-height: 1.17;
+  padding: 16px 0;
+  color: $secondary-color;
+  @media screen and (max-width: 479px) {
+    font-size: 5vw;
+  }
+}
+
+.menu__social-list {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: $average-font-weight;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: $accent-color;
+  margin-left: -10px;
+}
+
+.menu__social-item {
+  padding: 0 10px;
+  &:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+}
+
+.menu__social-link {
+  display: inline-block;
+  color: currentColor;
+}

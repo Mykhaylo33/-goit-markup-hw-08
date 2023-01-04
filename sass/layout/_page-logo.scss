@@ -1,0 +1,13 @@
+.page-logo {
+  display: flex;
+  font-family: $logo-font-family;
+  font-weight: $bolt-font-weight;
+  font-size: 24px;
+  line-height: 1.17;
+  color: $accent-color;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}

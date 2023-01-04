@@ -1,0 +1,31 @@
+.activity {
+  padding-bottom: 94px;
+  display: none;
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
+}
+
+.activity__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.activity__list-item {
+  position: relative;
+  flex-basis: calc(100% / 3 - 30px);
+}
+
+.activity__subtitle {
+  position: absolute;
+  bottom: 0;
+
+  margin: 0;
+  padding: 27px;
+  text-align: center;
+  width: 100%;
+  height: 70px;
+
+  background: rgba(47, 48, 58, 0.8);
+  color: $dark-main-color;
+}

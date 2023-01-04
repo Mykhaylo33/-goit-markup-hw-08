@@ -1,0 +1,12 @@
+@mixin transition($type) {
+  transition: $type $duration $timing-function;
+}
+@mixin transition-two($type-a, $type-b) {
+  transition: $type-a $duration $timing-function,
+    $type-b $duration $timing-function;
+}
+
+@mixin transition-three($type-a, $type-b, $type-c) {
+  transition: $type-a $duration $timing-function,
+    $type-b $duration $timing-function, $type-c $duration $timing-function;
+}

@@ -2,495 +2,604 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-
-  <link rel="stylesheet" href="./css/main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Портфолио</title>
+  <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
 <body>
-  <header class="page-header">
+  <!-- header site -->
+  <header class="header">
     <div class="container header__container">
-      <nav class="nav">
-        <a class="logo" href="./index.html">
-          <span class="web">Web</span>Studio</a>
-
-
-        <button type="button" class="button-open js-open-menu" aria-controls="mobile">
-          <svg class="burgger-icon">
-            <use href="./images/mobile-menu.svg#icon-menu"></use>
+      <nav class="header__nav-site">
+        <a class="page-logo header__page-logo" href="./index.html">
+          <span class="page-logo">Web</span>Studio</a
+        >
+        <button type="button" class="menu-button" data-menu-open>
+          <svg class="icon-menu">
+            <use href="./images/symbol-defs.svg#menu"></use>
           </svg>
         </button>
-
-
-        <ul class="nav__list ">
-          <li class="nav__item">
-            <a href="./index.html" class=" nav__sate">Студія</a>
-          </li>
-          <li class="nav__item">
-            <div class="current">
-              <a href="./portfolio.html" class="nav__sate nav__sate-current">Портфоліо
-              </a>
-            </div>
-          </li>
-          <li class="nav__item">
-            <a href="#contacts" class="nav__sate">Контакти
-            </a>
-          </li>
-        </ul>
+        <div class="header__tab-desk">
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a
+                class="nav-list__link "
+                href="./index.html"
+                >Студія</a
+              >
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link nav-list__link--active" href="./portfolio.html ">Портфоліо</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="">Контакти</a>
+            </li>
+          </ul>
+          <ul class="header-contacts">
+            <li class="header-contacts__item">
+              <a class="contact-link" href="mailto:info@devstudio.com.com">
+                <svg
+                  class="contact-link__icon contact-link__icon--prepend"
+                  width="16"
+                  height="12"
+                >
+                  <use
+                    href="./images/symbol-defs.svg#icon-envelope"
+                  ></use></svg
+                >info@devstudio.com.com</a
+              >
+            </li>
+            <li class="header-contacts__item">
+              <a class="contact-link" href="tel:380961111111">
+                <svg
+                  class="contact-link__icon contact-link__icon--prepend"
+                  width="10"
+                  height="16"
+                >
+                  <use
+                    href="./images/symbol-defs.svg#icon-smartphone"
+                  ></use></svg
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
       </nav>
-      <ul class="contact-header">
-        <li class="contact-header__item">
-          <a href="mailto:info@devstudio.com" class="contact-header__link">
-            <svg class="contact-header__icon contact-header__icon--envelope">
-              <use href="./images/icons.svg#icon-envelope">
-              </use>
-            </svg>info@devstudio.com</a>
-        </li>
-        <li class="contact-header__item">
-          <a href="tel:+380961111111" class="contact-header__link">
-            <svg class="contact-header__icon contact-header__icon--smartphone">
-              <use href="./images/icons.svg#icon-smartphone"></use>
-            </svg> +38 096 111 11 11</a>
-        </li>
-      </ul>
     </div>
   </header>
+  <!-- main portfolio  -->
   <main>
-
     <section class="portfolio">
-      <div class="container">
-        <h1 class="visually-hidden">Портфолио</h1>
-        <ul class="portfolio__button-list">
-          <li class="portfolio__button-item"><button type="button" class="portfolio__button">Усі</button></li>
+      <div class="container portfolio__container">
+        <h1 class="visually-hidden">Приклади робіт</h1>
+        <!-- button filtrs -->
 
-          <li class="portfolio__button-item">
-            <button type="button" class="portfolio__button">Веб-сайти</button>
+        <ul class="portfolio__filtrs">
+          <li class="portfolio__filtrs-item">
+            <button class="button portfolio__filtrs-btn" type="button">Усі</button>
           </li>
-
-          <li class="portfolio__button-item">
-            <button type="button" class="portfolio__button">Додатки</button>
+          <li class="portfolio__filtrs-item">
+            <button class="button portfolio__filtrs-btn" type="button">Веб-сайти</button>
           </li>
-
-          <li class="portfolio__button-item">
-            <button type="button" class="portfolio__button">Дизайн</button>
+          <li class="portfolio__filtrs-item">
+            <button class="button portfolio__filtrs-btn" type="button">додатки</button>
           </li>
-
-          <li class="portfolio__button-item">
-            <button type="button" class="portfolio__button">Маркетинг</button>
+          <li class="portfolio__filtrs-item">
+            <button class="button portfolio__filtrs-btn" type="button">Дизайн</button>
+          </li>
+          <li class="portfolio__filtrs-item">
+            <button class="button portfolio__filtrs-btn" type="button">Маркетинг</button>
           </li>
         </ul>
-        <ul class="portfolio__list">
+
+        <!-- portfolio -->
+        <ul class="portfolio__card-set">
           <li class="portfolio__item">
-            <a href="" class="portfolio__link">
-              <div class="box">
+            <a class="portfolio__link" href="">
+              <div class="portfolio__thumb">
                 <picture>
-                  <source media="(min-width: 1200px)"
-                    srcset="./images/portfolio-desktop-1.jpg 1x, ./images/portfolio-desktop-1@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="./images/portfolio-tablet-1.jpg 1x,
-                  ./images/portfolio-tablet-1@2x.jpg 2x">
-                  <source media="(max-width: 767px)" srcset="./images/portfolio-mobile-1.jpg 1x,
-                  ./images/portfolio-mobile-1@2x.jpg 2x">
-
-                  <img class="portfolio__foto" src="./images/portfolio-desktop-1.jpg" alt="Технокряк" width="450"
-                    height="294" loading="lazy">
-
+                  <source srcset="
+                    ./images/portfolio/optimisized-webp/mob/portfolio__1__mob.webp 1x, 
+                    ./images/portfolio/optimisized-webp/mob/portfolio__1__mob@2x.webp 2x,
+                    ./images/portfolio/optimisized-webp/mob/portfolio__1__mob@3x.webp 3x" media="(max-width: 767px)"
+                    type="image/webp" />
+                  <source srcset="
+                    ./images/portfolio/optimisized-webp/desk/portfolio__1__desk.webp 1x, 
+                    ./images/portfolio/optimisized-webp/desk/portfolio__1__desk@2x.webp 2x,
+                    ./images/portfolio/optimisized-webp/desk/portfolio__1__desk@3x.webp 3x"
+                    media="(min-width: $desktop)" type="image/webp" />
+                  <source srcset="
+                    ./images/portfolio/optimisized-webp/tab/portfolio__1__tab.webp 1x, 
+                    ./images/portfolio/optimisized-webp/tab/portfolio__1__tab@2x.webp 2x,
+                    ./images/portfolio/optimisized-webp/tab/portfolio__1__tab@3x.webp 3x" media="(min-width: $tablet)"
+                    type="image/webp" />
+                  <source srcset="
+                    ./images/portfolio/optimisized-jpg/desk/portfolio__1__desk.jpg 1x, 
+                    ./images/portfolio/optimisized-jpg/desk/portfolio__1__desk@2x.jpg 2x,
+                    ./images/portfolio/optimisized-jpg/desk/portfolio__1__desk@3x.jpg 3x"
+                    media="(min-width: $desktop)" />
+                  <source srcset="
+                    ./images/portfolio/optimisized-jpg/tab/portfolio__1__tab.jpg 1x, 
+                    ./images/portfolio/optimisized-jpg/tab/portfolio__1__tab@2x.jpg 2x,
+                    ./images/portfolio/optimisized-jpg/tab/portfolio__1__tab@3x.jpg 3x" media="(min-width: $tablet)" />
+                  <img srcset="
+                    ./images/portfolio/optimisized-jpg/mob/portfolio__1__mob.jpg 1x, 
+                    ./images/portfolio/optimisized-jpg/mob/portfolio__1__mob@2x.jpg 2x,
+                    ./images/portfolio/optimisized-jpg/mob/portfolio__1__mob@3x.jpg 3x"
+                    src="./images/portfolio/optimisized-jpg/mob/portfolio__1__mob.jpg"
+                    alt="" />
                 </picture>
-
-                <div class="overlay">
-                  <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                    сервісів.Все це дозволить
-                    відвідувачу отримати
-                    вичерпні відомості про компанію чи приватну особу.</p>
+                <div class="portfolio__overlay">
+                  <p class="portfolio__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу..</p>
                 </div>
               </div>
-              <div class="portfolio__text">
-                <h2 class="portfolio__projects">Технокряк</h2>
-                <p class="portfolio__specification-projects">Веб-сайт</p>
+              <div class="portfolio__project">
+                <h2 class="portfolio__caption">Технокряк</h2>
+                <p class="portfolio__text text">Веб-сайт</p>
               </div>
             </a>
-
-
-          <li class="portfolio__item">
-            <a href="" class="portfolio__link">
-              <div class="box">
-                <picture>
-                  <source media="(min-width: 1200px)"
-                    srcset="./images/portfolio-desktop-2.jpg 1x, ./images/portfolio-desktop-2@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="./images/portfolio-tablet-2.jpg 1x,
-                  ./images/portfolio-tablet-2@2x.jpg 2x">
-                  <source media="(max-width: 767px)" srcset="./images/portfolio-mobile-2.jpg 1x,
-                  ./images/portfolio-mobile-2@2x.jpg 2x">
-                  <img class="portfolio__foto" src="./images/portfolio-desktop-2.jpg"
-                    alt="Постер New Orlean vs Golden Star" width="450" height="294" loading="lazy">
-                </picture>
-
-                <div class="overlay">
-                  <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                    сервісів.Все це дозволить
-                    відвідувачу отримати
-                    вичерпні відомості про компанію чи приватну особу.</p>
-                </div>
-              </div>
-
-              <div class="portfolio__text">
-                <h2 class="portfolio__projects">Постер New Orlean vs Golden Star</h2>
-                <p class="portfolio__specification-projects">Дизайн</p>
-              </div>
-            </a>
-
           </li>
-
           <li class="portfolio__item">
-            <a href="" class="portfolio__link">
-              <div class="box">
+            <a class="portfolio__link" href="">
+              <div class="portfolio__thumb">
                 <picture>
-                  <source media="(min-width: 1200px)"
-                    srcset="./images/portfolio-desktop-3.jpg 1x, ./images/portfolio-desktop-3@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="./images/portfolio-tablet-3.jpg 1x,
-                    ./images/portfolio-tablet-3@2x.jpg 2x">
-                  <source media="(max-width: 767px)" srcset="./images/portfolio-mobile-3.jpg 1x,
-                    ./images/portfolio-mobile-3@2x.jpg 2x">
-                  <img class="portfolio__foto" src="./images/portfolio-desktop-3.jpg" alt="Ресторан Seafood" width="450"
-                    height="294" loading="lazy">
+                  <source srcset="
+                    ./images/portfolio/optimisized-webp/mob/portfolio__2__mob.webp 1x, 
+                    ./images/portfolio/optimisized-webp/mob/portfolio__2__mob@2x.webp 2x,
+                    ./images/portfolio/optimisized-webp/mob/portfolio__2__mob@3x.webp 3x" media="(max-width: 767px)"
+                    type="image/webp" />
+                  <source srcset="
+                    ./images/portfolio/optimisized-webp/desk/portfolio__2__desk.webp 1x, 
+                    ./images/portfolio/optimisized-webp/desk/portfolio__2__desk@2x.webp 2x,
+                    ./images/portfolio/optimisized-webp/desk/portfolio__2__desk@3x.webp 3x"
+                    media="(min-width: $desktop)" type="image/webp" />
+                  <source srcset="
+                    ./images/portfolio/optimisized-webp/tab/portfolio__2__tab.webp 1x, 
+                    ./images/portfolio/optimisized-webp/tab/portfolio__2__tab@2x.webp 2x,
+                    ./images/portfolio/optimisized-webp/tab/portfolio__2__tab@3x.webp 3x" media="(min-width: $tablet)"
+                    type="image/webp" />
+                  <source srcset="
+                    ./images/portfolio/optimisized-jpg/desk/portfolio__2__desk.jpg 1x, 
+                    ./images/portfolio/optimisized-jpg/desk/portfolio__2__desk@2x.jpg 2x,
+                    ./images/portfolio/optimisized-jpg/desk/portfolio__2__desk@3x.jpg 3x"
+                    media="(min-width: $desktop)" />
+                  <source srcset="
+                    ./images/portfolio/optimisized-jpg/tab/portfolio__2__tab.jpg 1x, 
+                    ./images/portfolio/optimisized-jpg/tab/portfolio__2__tab@2x.jpg 2x,
+                    ./images/portfolio/optimisized-jpg/tab/portfolio__2__tab@3x.jpg 3x" media="(min-width: $tablet)" />
+                  <img srcset="
+                    ./images/portfolio/optimisized-jpg/mob/portfolio__2__mob.jpg 1x, 
+                    ./images/portfolio/optimisized-jpg/mob/portfolio__2__mob@2x.jpg 2x,
+                    ./images/portfolio/optimisized-jpg/mob/portfolio__2__mob@3x.jpg 3x"
+                    src="./images/portfolio/optimisized-jpg/mob/portfolio__2__mob.jpg"
+                    alt="" />
                 </picture>
-                <div class="overlay">
-                  <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                    сервісів.Все це дозволить
-                    відвідувачу отримати
-                    вичерпні відомості про компанію чи приватну особу.</p>
+                <div class="portfolio__overlay">
+                  <p class="portfolio__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу..</p>
                 </div>
               </div>
-
-              <div class="portfolio__text">
-                <h2 class="portfolio__projects">Ресторан Seafood</h2>
-                <p class="portfolio__specification-projects">Додаток</p>
+              <div class="portfolio__project">
+                <h2 class="portfolio__caption">
+                  Постер New Orlean vs Golden Star
+                </h2>
+                <p class="portfolio__text text">Дизайн</p>
               </div>
             </a>
-
           </li>
-
           <li class="portfolio__item">
-            <a href="" class="portfolio__link">
-              <div class="box">
+            <a class="portfolio__link" href="">
+              <div class="portfolio__thumb">
                 <picture>
-                  <source media="(min-width: 1200px)"
-                    srcset="./images/portfolio-desktop-4.jpg 1x, ./images/portfolio-desktop-4@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="./images/portfolio-tablet-4.jpg 1x,
-                  ./images/portfolio-tablet-4@2x.jpg 2x">
-                  <source media="(max-width: 767px)" srcset="./images/portfolio-mobile-4.jpg 1x,
-                  ./images/portfolio-mobile-4@2x.jpg 2x">
-                  <img class="portfolio__foto" src="./images/portfolio-desktop-4.jpg" alt="Проєкт Prime" width="450"
-                    height="294" loading="lazy">
+                  <source srcset="
+                    ./images/portfolio/optimisized-webp/mob/portfolio__3__mob.webp 1x, 
+                    ./images/portfolio/optimisized-webp/mob/portfolio__3__mob@2x.webp 2x,
+                    ./images/portfolio/optimisized-webp/mob/portfolio__3__mob@3x.webp 3x" media="(max-width: 767px)"
+                    type="image/webp" />
+                  <source srcset="
+                    ./images/portfolio/optimisized-webp/desk/portfolio__3__desk.webp 1x, 
+                    ./images/portfolio/optimisized-webp/desk/portfolio__3__desk@2x.webp 2x,
+                    ./images/portfolio/optimisized-webp/desk/portfolio__3__desk@3x.webp 3x"
+                    media="(min-width: $desktop)" type="image/webp" />
+                  <source srcset="
+                    ./images/portfolio/optimisized-webp/tab/portfolio__3__tab.webp 1x, 
+                    ./images/portfolio/optimisized-webp/tab/portfolio__3__tab@2x.webp 2x,
+                    ./images/portfolio/optimisized-webp/tab/portfolio__3__tab@3x.webp 3x" media="(min-width: $tablet)"
+                    type="image/webp" />
+                  <source srcset="
+                    ./images/portfolio/optimisized-jpg/desk/portfolio__3__desk.jpg 1x, 
+                    ./images/portfolio/optimisized-jpg/desk/portfolio__3__desk@2x.jpg 2x,
+                    ./images/portfolio/optimisized-jpg/desk/portfolio__3__desk@3x.jpg 3x"
+                    media="(min-width: $desktop)" />
+                  <source srcset="
+                    ./images/portfolio/optimisized-jpg/tab/portfolio__3__tab.jpg 1x, 
+                    ./images/portfolio/optimisized-jpg/tab/portfolio__3__tab@2x.jpg 2x,
+                    ./images/portfolio/optimisized-jpg/tab/portfolio__3__tab@3x.jpg 3x" media="(min-width: $tablet)" />
+                  <img srcset="
+                    ./images/portfolio/optimisized-jpg/mob/portfolio__3__mob.jpg 1x, 
+                    ./images/portfolio/optimisized-jpg/mob/portfolio__3__mob@2x.jpg 2x,
+                    ./images/portfolio/optimisized-jpg/mob/portfolio__3__mob@3x.jpg 3x"
+                    src="./images/portfolio/optimisized-jpg/mob/portfolio__3__mob.jpg"
+                    alt="" />
                 </picture>
-
-                <div class="overlay">
-                  <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                    сервісів.Все це дозволить
-                    відвідувачу отримати
-                    вичерпні відомості про компанію чи приватну особу.</p>
+                <div class="portfolio__overlay">
+                  <p class="portfolio__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу..</p>
                 </div>
               </div>
-
-              <div class="portfolio__text">
-                <h2 class="portfolio__projects">Проєкт Prime</h2>
-                <p class="portfolio__specification-projects">Маркетинг</p>
+              <div class="portfolio__project">
+                <h2 class="portfolio__caption">Ресторан Seafood</h2>
+                <p class="portfolio__text text">Додаток</p>
               </div>
             </a>
-
           </li>
-
           <li class="portfolio__item">
-            <a href="" class="portfolio__link">
-              <div class="box">
+            <a class="portfolio__link" href="">
+              <div class="portfolio__thumb">
                 <picture>
-                  <source media="(min-width: 1200px)"
-                    srcset="./images/portfolio-desktop-5.jpg 1x, ./images/portfolio-desktop-5@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="./images/portfolio-tablet-5.jpg 1x,
-                  ./images/portfolio-tablet-5@2x.jpg 2x">
-                  <source media="(max-width: 767px)" srcset="./images/portfolio-mobile-5.jpg 1x,
-                  ./images/portfolio-mobile-5@2x.jpg 2x">
-                  <img class="portfolio__foto" src="./images/portfolio-desktop-5.jpg" alt="Проєкт Boxes" width="450"
-                    height="294" loading="lazy">
+                  <source srcset="
+                    ./images/portfolio/optimisized-webp/mob/portfolio__4__mob.webp 1x, 
+                    ./images/portfolio/optimisized-webp/mob/portfolio__4__mob@2x.webp 2x,
+                    ./images/portfolio/optimisized-webp/mob/portfolio__4__mob@3x.webp 3x" media="(max-width:  767px)"
+                    type="image/webp" />
+                  <source srcset="
+                    ./images/portfolio/optimisized-webp/desk/portfolio__4__desk.webp 1x, 
+                    ./images/portfolio/optimisized-webp/desk/portfolio__4__desk@2x.webp 2x,
+                    ./images/portfolio/optimisized-webp/desk/portfolio__4__desk@3x.webp 3x"
+                    media="(min-width: $desktop)" type="image/webp" />
+                  <source srcset="
+                    ./images/portfolio/optimisized-webp/tab/portfolio__4__tab.webp 1x, 
+                    ./images/portfolio/optimisized-webp/tab/portfolio__4__tab@2x.webp 2x,
+                    ./images/portfolio/optimisized-webp/tab/portfolio__4__tab@3x.webp 3x" media="(min-width: $tablet)"
+                    type="image/webp" />
+                  <source srcset="
+                    ./images/portfolio/optimisized-jpg/desk/portfolio__4__desk.jpg 1x, 
+                    ./images/portfolio/optimisized-jpg/desk/portfolio__4__desk@2x.jpg 2x,
+                    ./images/portfolio/optimisized-jpg/desk/portfolio__4__desk@3x.jpg 3x"
+                    media="(min-width: $desktop)" />
+                  <source srcset="
+                    ./images/portfolio/optimisized-jpg/tab/portfolio__4__tab.jpg 1x, 
+                    ./images/portfolio/optimisized-jpg/tab/portfolio__4__tab@2x.jpg 2x,
+                    ./images/portfolio/optimisized-jpg/tab/portfolio__4__tab@3x.jpg 3x" media="(min-width: $tablet)" />
+                  <img srcset="
+                    ./images/portfolio/optimisized-jpg/mob/portfolio__4__mob.jpg 1x, 
+                    ./images/portfolio/optimisized-jpg/mob/portfolio__4__mob@2x.jpg 2x,
+                    ./images/portfolio/optimisized-jpg/mob/portfolio__4__mob@3x.jpg 3x"
+                    src="./images/portfolio/optimisized-jpg/mob/portfolio__4__mob.jpg" alt="" />
                 </picture>
-
-                <div class="overlay">
-                  <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                    сервісів.Все це дозволить
-                    відвідувачу отримати
-                    вичерпні відомості про компанію чи приватну особу.</p>
+                <div class="portfolio__overlay">
+                  <p class="portfolio__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу..</p>
                 </div>
               </div>
-
-              <div class="portfolio__text">
-                <h2 class="portfolio__projects">Проєкт Boxes</h2>
-                <p class="portfolio__specification-projects">Додаток</p>
+              <div class="portfolio__project">
+                <h2 class="portfolio__caption">Проєкт Prime</h2>
+                <p class="portfolio__text text">Маркетинг</p>
               </div>
             </a>
-
           </li>
-
           <li class="portfolio__item">
-            <a href="" class="portfolio__link">
-              <div class="box">
+            <a class="portfolio__link" href="">
+              <div class="portfolio__thumb">
                 <picture>
-                  <source media="(min-width: 1200px)"
-                    srcset="./images/portfolio-desktop-6.jpg 1x, ./images/portfolio-desktop-6@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="./images/portfolio-tablet-6.jpg 1x,
-                ./images/portfolio-tablet-6@2x.jpg 2x">
-                  <source media="(max-width: 767px)" srcset="./images/portfolio-mobile-6.jpg 1x,
-                ./images/portfolio-mobile-6@2x.jpg 2x">
-                  <img class="portfolio__foto" src="./images/portfolio-desktop-6.jpg" alt="Inspiration has no Borders"
-                    width="450" height="294" loading="lazy">
+                  <source srcset="
+                    ./images/portfolio/optimisized-webp/mob/portfolio__5__mob.webp 1x, 
+                    ./images/portfolio/optimisized-webp/mob/portfolio__5__mob@2x.webp 2x,
+                    ./images/portfolio/optimisized-webp/mob/portfolio__5__mob@3x.webp 3x" media="(max-width: 767px)"
+                    type="image/webp" />
+                  <source srcset="
+                    ./images/portfolio/optimisized-webp/desk/portfolio__5__desk.webp 1x, 
+                    ./images/portfolio/optimisized-webp/desk/portfolio__5__desk@2x.webp 2x,
+                    ./images/portfolio/optimisized-webp/desk/portfolio__5__desk@3x.webp 3x"
+                    media="(min-width: $desktop)" type="image/webp" />
+                  <source srcset="
+                    ./images/portfolio/optimisized-webp/tab/portfolio__5__tab.webp 1x, 
+                    ./images/portfolio/optimisized-webp/tab/portfolio__5__tab@2x.webp 2x,
+                    ./images/portfolio/optimisized-webp/tab/portfolio__5__tab@3x.webp 3x" media="(min-width: $tablet)"
+                    type="image/webp" />
+                  <source srcset="
+                    ./images/portfolio/optimisized-jpg/desk/portfolio__5__desk.jpg 1x, 
+                    ./images/portfolio/optimisized-jpg/desk/portfolio__5__desk@2x.jpg 2x,
+                    ./images/portfolio/optimisized-jpg/desk/portfolio__5__desk@3x.jpg 3x"
+                    media="(min-width: $desktop)" />
+                  <source srcset="
+                    ./images/portfolio/optimisized-jpg/tab/portfolio__5__tab.jpg 1x, 
+                    ./images/portfolio/optimisized-jpg/tab/portfolio__5__tab@2x.jpg 2x,
+                    ./images/portfolio/optimisized-jpg/tab/portfolio__5__tab@3x.jpg 3x" media="(min-width: $tablet)" />
+                  <img srcset="
+                    ./images/portfolio/optimisized-jpg/mob/portfolio__5__mob.jpg 1x, 
+                    ./images/portfolio/optimisized-jpg/mob/portfolio__5__mob@2x.jpg 2x,
+                    ./images/portfolio/optimisized-jpg/mob/portfolio__5__mob@3x.jpg 3x"
+                    src="./images/portfolio/optimisized-jpg/mob/portfolio__5__mob.jpg"
+                    alt="" />
                 </picture>
-
-                <div class="overlay">
-                  <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                    сервісів.Все це дозволить
-                    відвідувачу отримати
-                    вичерпні відомості про компанію чи приватну особу.</p>
+                <div class="portfolio__overlay">
+                  <p class="portfolio__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу..</p>
                 </div>
               </div>
-
-              <div class="portfolio__text">
-                <h2 class="portfolio__projects">Inspiration has no Borders</h2>
-                <p class="portfolio__specification-projects">Веб-сайт</p>
+              <div class="portfolio__project">
+                <h2 class="portfolio__caption">Проєкт Boxes</h2>
+                <p class="portfolio__text text">Додаток</p>
               </div>
             </a>
-
           </li>
-
           <li class="portfolio__item">
-            <a href="" class="portfolio__link">
-              <div class="box">
+            <a class="portfolio__link" href="">
+              <div class="portfolio__thumb">
                 <picture>
-                  <source media="(min-width: 1200px)"
-                    srcset="./images/portfolio-desktop-7.jpg 1x, ./images/portfolio-desktop-7@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="./images/portfolio-tablet-7.jpg 1x,
-                                ./images/portfolio-tablet-7@2x.jpg 2x">
-                  <source media="(max-width: 767px)" srcset="./images/portfolio-mobile-7.jpg 1x,
-                                ./images/portfolio-mobile-7@2x.jpg 2x">
-                  <img class="portfolio__foto" src="./images/portfolio-desktop-7.jpg" alt="Видання Limited Edition"
-                    width="450" height="294" loading="lazy">
+                  <source srcset="
+                    ./images/portfolio/optimisized-webp/mob/portfolio__6__mob.webp 1x, 
+                    ./images/portfolio/optimisized-webp/mob/portfolio__6__mob@2x.webp 2x,
+                    ./images/portfolio/optimisized-webp/mob/portfolio__6__mob@3x.webp 3x" media="(max-width: 767px)"
+                    type="image/webp" />
+                  <source srcset="
+                    ./images/portfolio/optimisized-webp/desk/portfolio__6__desk.webp 1x, 
+                    ./images/portfolio/optimisized-webp/desk/portfolio__6__desk@2x.webp 2x,
+                    ./images/portfolio/optimisized-webp/desk/portfolio__6__desk@3x.webp 3x"
+                    media="(min-width: $desktop)" type="image/webp" />
+                  <source srcset="
+                    ./images/portfolio/optimisized-webp/tab/portfolio__6__tab.webp 1x, 
+                    ./images/portfolio/optimisized-webp/tab/portfolio__6__tab@2x.webp 2x,
+                    ./images/portfolio/optimisized-webp/tab/portfolio__6__tab@3x.webp 3x" media="(min-width: $tablet)"
+                    type="image/webp" />
+                  <source srcset="
+                    ./images/portfolio/optimisized-jpg/desk/portfolio__6__desk.jpg 1x, 
+                    ./images/portfolio/optimisized-jpg/desk/portfolio__6__desk@2x.jpg 2x,
+                    ./images/portfolio/optimisized-jpg/desk/portfolio__6__desk@3x.jpg 3x"
+                    media="(min-width: $desktop)" />
+                  <source srcset="
+                    ./images/portfolio/optimisized-jpg/tab/portfolio__6__tab.jpg 1x, 
+                    ./images/portfolio/optimisized-jpg/tab/portfolio__6__tab@2x.jpg 2x,
+                    ./images/portfolio/optimisized-jpg/tab/portfolio__6__tab@3x.jpg 3x" media="(min-width: $tablet)" />
+                  <img srcset="
+                    ./images/portfolio/optimisized-jpg/mob/portfolio__6__mob.jpg 1x, 
+                    ./images/portfolio/optimisized-jpg/mob/portfolio__6__mob@2x.jpg 2x,
+                    ./images/portfolio/optimisized-jpg/mob/portfolio__6__mob@3x.jpg 3x"
+                    src="./images/portfolio/optimisized-jpg/mob/portfolio__6__mob.jpg"
+                    alt="" />
                 </picture>
-                <div class="overlay">
-                  <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                    сервісів.Все це дозволить
-                    відвідувачу отримати
-                    вичерпні відомості про компанію чи приватну особу.</p>
+                <div class="portfolio__overlay">
+                  <p class="portfolio__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу..</p>
                 </div>
               </div>
-
-              <div class="portfolio__text">
-                <h2 class="portfolio__projects">Видання Limited Edition</h2>
-                <p class="portfolio__specification-projects">Дизайн</p>
+              <div class="portfolio__project">
+                <h2 class="portfolio__caption">Inspiration has no Borders</h2>
+                <p class="portfolio__text text">Веб-сайт</p>
               </div>
             </a>
-
           </li>
-
           <li class="portfolio__item">
-            <a href="" class="portfolio__link">
-              <div class="box">
+            <a class="portfolio__link" href="">
+              <div class="portfolio__thumb">
                 <picture>
-                  <source media="(min-width: 1200px)"
-                    srcset="./images/portfolio-desktop-8.jpg 1x, ./images/portfolio-desktop-8@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="./images/portfolio-tablet-8.jpg 1x,
-                  ./images/portfolio-tablet-8@2x.jpg 2x">
-                  <source media="(max-width: 767px)" srcset="./images/portfolio-mobile-8.jpg 1x,
-                  ./images/portfolio-mobile-8@2x.jpg 2x">
-                  <img class="portfolio__foto" src="./images/portfolio-desktop-8.jpg" alt="Проєкт LAB" width="450"
-                    height="294" loading="lazy">
+                  <source srcset="
+                    ./images/portfolio/optimisized-webp/mob/portfolio__7__mob.webp 1x, 
+                    ./images/portfolio/optimisized-webp/mob/portfolio__7__mob@2x.webp 2x,
+                    ./images/portfolio/optimisized-webp/mob/portfolio__7__mob@3x.webp 3x" media="(max-width: 767px)"
+                    type="image/webp" />
+                  <source srcset="
+                    ./images/portfolio/optimisized-webp/desk/portfolio__7__desk.webp 1x, 
+                    ./images/portfolio/optimisized-webp/desk/portfolio__7__desk@2x.webp 2x,
+                    ./images/portfolio/optimisized-webp/desk/portfolio__7__desk@3x.webp 3x"
+                    media="(min-width: $desktop)" type="image/webp" />
+                  <source srcset="
+                    ./images/portfolio/optimisized-webp/tab/portfolio__7__tab.webp 1x, 
+                    ./images/portfolio/optimisized-webp/tab/portfolio__7__tab@2x.webp 2x,
+                    ./images/portfolio/optimisized-webp/tab/portfolio__7__tab@3x.webp 3x" media="(min-width: $tablet)"
+                    type="image/webp" />
+                  <source srcset="
+                    ./images/portfolio/optimisized-jpg/desk/portfolio__7__desk.jpg 1x, 
+                    ./images/portfolio/optimisized-jpg/desk/portfolio__7__desk@2x.jpg 2x,
+                    ./images/portfolio/optimisized-jpg/desk/portfolio__7__desk@3x.jpg 3x"
+                    media="(min-width: $desktop)" />
+                  <source srcset="
+                    ./images/portfolio/optimisized-jpg/tab/portfolio__7__tab.jpg 1x, 
+                    ./images/portfolio/optimisized-jpg/tab/portfolio__7__tab@2x.jpg 2x,
+                    ./images/portfolio/optimisized-jpg/tab/portfolio__7__tab@3x.jpg 3x" media="(min-width: $tablet)" />
+                  <img srcset="
+                    ./images/portfolio/optimisized-jpg/mob/portfolio__7__mob.jpg 1x, 
+                    ./images/portfolio/optimisized-jpg/mob/portfolio__7__mob@2x.jpg 2x,
+                    ./images/portfolio/optimisized-jpg/mob/portfolio__7__mob@3x.jpg 3x"
+                    src="./images/portfolio/optimisized-jpg/mob/portfolio__7__mob.jpg" alt="" />
                 </picture>
-
-                <div class="overlay">
-                  <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                    сервісів.Все це дозволить
-                    відвідувачу отримати
-                    вичерпні відомості про компанію чи приватну особу.</p>
+                <div class="portfolio__overlay">
+                  <p class="portfolio__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу..</p>
                 </div>
               </div>
-
-              <div class="portfolio__text">
-                <h2 class="portfolio__projects">Проєкт LAB</h2>
-                <p class="portfolio__specification-projects">Маркетинг</p>
+              <div class="portfolio__project">
+                <h2 class="portfolio__caption">Видання Limited Edition</h2>
+                <p class="portfolio__text text">Дизайн</p>
               </div>
             </a>
-
           </li>
-
           <li class="portfolio__item">
-            <a href="" class="portfolio__link">
-              <div class="box">
+            <a class="portfolio__link" href="">
+              <div class="portfolio__thumb">
                 <picture>
-                  <source media="(min-width: 1200px)"
-                    srcset="./images/portfolio-desktop-9.jpg 1x, ./images/portfolio-desktop-9@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="./images/portfolio-tablet-9.jpg 1x,
-                  ./images/portfolio-tablet-9@2x.jpg 2x">
-                  <source media="(max-width: 767px)" srcset="./images/portfolio-mobile-9.jpg 1x,
-                  ./images/portfolio-mobile-9@2x.jpg 2x">
-                  <img class="portfolio__foto" src="./images/portfolio-desktop-9.jpg" alt="Growing Business" width="450"
-                    height="294" loading="lazy">
+                  <source srcset="
+                    ./images/portfolio/optimisized-webp/mob/portfolio__8__mob.webp 1x, 
+                    ./images/portfolio/optimisized-webp/mob/portfolio__8__mob@2x.webp 2x,
+                    ./images/portfolio/optimisized-webp/mob/portfolio__8__mob@3x.webp 3x" media="(max-width: 767px)"
+                    type="image/webp" />
+                  <source srcset="
+                    ./images/portfolio/optimisized-webp/desk/portfolio__8__desk.webp 1x, 
+                    ./images/portfolio/optimisized-webp/desk/portfolio__8__desk@2x.webp 2x,
+                    ./images/portfolio/optimisized-webp/desk/portfolio__8__desk@3x.webp 3x"
+                    media="(min-width: $desktop)" type="image/webp" />
+                  <source srcset="
+                    ./images/portfolio/optimisized-webp/tab/portfolio__8__tab.webp 1x, 
+                    ./images/portfolio/optimisized-webp/tab/portfolio__8__tab@2x.webp 2x,
+                    ./images/portfolio/optimisized-webp/tab/portfolio__8__tab@3x.webp 3x" media="(min-width: $tablet)"
+                    type="image/webp" />
+                  <source srcset="
+                    ./images/portfolio/optimisized-jpg/desk/portfolio__8__desk.jpg 1x, 
+                    ./images/portfolio/optimisized-jpg/desk/portfolio__8__desk@2x.jpg 2x,
+                    ./images/portfolio/optimisized-jpg/desk/portfolio__8__desk@3x.jpg 3x"
+                    media="(min-width: $desktop)" />
+                  <source srcset="
+                    ./images/portfolio/optimisized-jpg/tab/portfolio__8__tab.jpg 1x, 
+                    ./images/portfolio/optimisized-jpg/tab/portfolio__8__tab@2x.jpg 2x,
+                    ./images/portfolio/optimisized-jpg/tab/portfolio__8__tab@3x.jpg 3x" media="(min-width: $tablet)" />
+                  <img srcset="
+                    ./images/portfolio/optimisized-jpg/mob/portfolio__8__mob.jpg 1x, 
+                    ./images/portfolio/optimisized-jpg/mob/portfolio__8__mob@2x.jpg 2x,
+                    ./images/portfolio/optimisized-jpg/mob/portfolio__8__mob@3x.jpg 3x"
+                    src="./images/portfolio/optimisized-jpg/mob/portfolio__8__mob.jpg"
+                    alt="" />
                 </picture>
-
-                <div class="overlay">
-                  <p class="overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                    сервісів.Все це дозволить
-                    відвідувачу отримати
-                    вичерпні відомості про компанію чи приватну особу.</p>
+                <div class="portfolio__overlay">
+                  <p class="portfolio__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу..</p>
                 </div>
               </div>
-
-              <div class="portfolio__text">
-                <h2 class="portfolio__projects">Growing Business</h2>
-                <p class="portfolio__specification-projects">Додаток</p>
+              <div class="portfolio__project">
+                <h2 class="portfolio__caption">Проєкт LAB</h2>
+                <p class="portfolio__text text">Маркетинг</p>
               </div>
             </a>
-
+          </li>
+          <li class="portfolio__item">
+            <a class="portfolio__link" href="">
+              <div class="portfolio__thumb">
+                <picture>
+                  <source srcset="
+                    ./images/portfolio/optimisized-webp/mob/portfolio__9__mob.webp 1x, 
+                    ./images/portfolio/optimisized-webp/mob/portfolio__9__mob@2x.webp 2x,
+                    ./images/portfolio/optimisized-webp/mob/portfolio__9__mob@3x.webp 3x" media="(max-width: 767px)"
+                    type="image/webp" />
+                  <source srcset="
+                    ./images/portfolio/optimisized-webp/desk/portfolio__9__desk.webp 1x, 
+                    ./images/portfolio/optimisized-webp/desk/portfolio__9__desk@2x.webp 2x,
+                    ./images/portfolio/optimisized-webp/desk/portfolio__9__desk@3x.webp 3x"
+                    media="(min-width: $desktop)" type="image/webp" />
+                  <source srcset="
+                    ./images/portfolio/optimisized-webp/tab/portfolio__9__tab.webp 1x, 
+                    ./images/portfolio/optimisized-webp/tab/portfolio__9__tab@2x.webp 2x,
+                    ./images/portfolio/optimisized-webp/tab/portfolio__9__tab@3x.webp 3x" media="(min-width: $tablet)"
+                    type="image/webp" />
+                  <source srcset="
+                    ./images/portfolio/optimisized-jpg/desk/portfolio__9__desk.jpg 1x, 
+                    ./images/portfolio/optimisized-jpg/desk/portfolio__9__desk@2x.jpg 2x,
+                    ./images/portfolio/optimisized-jpg/desk/portfolio__9__desk@3x.jpg 3x"
+                    media="(min-width: $desktop)" />
+                  <source srcset="
+                    ./images/portfolio/optimisized-jpg/tab/portfolio__9__tab.jpg 1x, 
+                    ./images/portfolio/optimisized-jpg/tab/portfolio__9__tab@2x.jpg 2x,
+                    ./images/portfolio/optimisized-jpg/tab/portfolio__9__tab@3x.jpg 3x" media="(min-width: $tablet)" />
+                  <img srcset="
+                    ./images/portfolio/optimisized-jpg/mob/portfolio__9__mob.jpg 1x, 
+                    ./images/portfolio/optimisized-jpg/mob/portfolio__9__mob@2x.jpg 2x,
+                    ./images/portfolio/optimisized-jpg/mob/portfolio__9__mob@3x.jpg 3x"
+                    src="./images/portfolio/optimisized-jpg/mob/portfolio__9__mob.jpg"
+                    alt="" />
+                </picture>
+                <div class="portfolio__overlay">
+                  <p class="portfolio__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу..</p>
+                </div>
+              </div>
+              <div class="portfolio__project">
+                <h2 class="portfolio__caption">Growing Business</h2>
+                <p class="portfolio__text text">Додаток</p>
+              </div>
+            </a>
           </li>
         </ul>
       </div>
     </section>
-
   </main>
-  <footer class="bottom">
-    <div class="container container-bottom">
-      <div class="tablet-bottom">
-        <div class="bottom__info">
-          <a class="logo bottom__logo" href="./index.html"><span class="web">Web</span>Studio</a>
 
+  <!-- footer -->
+   <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__box">
+          <a class="page-logo footer__page-logo" href="./index.html"
+            ><span class="page-logo">Web</span>Studio</a
+          >
           <address class="address">
             <ul class="address__list">
+              <li class="address__item">м. Київ, пр-т Лесі Українки, 26</li>
               <li class="address__item">
-                <a class="address__map" href="https://goo.gl/maps/SfQESJmpyGkEM5ET7" target="_blank"
-                  rel="noreferrer noopener">
-                  м. Київ, пр-т Лесі Українки, 26
-                </a>
+                <a
+                  class="address__contact-link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
               </li>
-
               <li class="address__item">
-                <a href="mailto:info@devstudio.com"
-                  class="contact-header__link contact-header__link--bottom">info@devstudio.com</a>
-              </li>
-
-              <li class="address__item">
-                <a href="tel:+380961111111" class="contact-header__link contact-header__link--bottom">+38 096 111 11
-                  11</a>
+                <a class="address__contact-link" href="tel:380961111111"
+                  >+38 096 111 11 11</a
+                >
               </li>
             </ul>
           </address>
         </div>
-        <div class="bottom_social">
-          <p class="bottom_social__titel">приєднуйтесь</p>
-          <ul class="social-list">
-            <li class="social-list__item">
-              <a href="https://instagram.com" class="social-list__link social-list__link-bottom">
-                <svg class="social-list__icon">
-                  <use href="./images/icons.svg#icon-instagram">
-                  </use>
+        <div class="footer__join">
+          <p class="footer__join-text">приєднуйтесь</p>
+          <ul class="social-networks">
+            <li class="social-networks_item">
+              <a
+                class="social-networks__link social-networks__link--dark-theam"
+                href=""
+              >
+                <svg class="social-networks__icon">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-list__item">
-              <a href="https://twitter.com" class="social-list__link social-list__link-bottom">
-                <svg class="social-list__icon">
-                  <use href="./images/icons.svg#icon-Twitter">
-                  </use>
+            <li class="social-networks_item">
+              <a
+                class="social-networks__link social-networks__link--dark-theam"
+                href=""
+              >
+                <svg class="social-networks__icon">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-list__item">
-              <a href="https://facebook.com" class="social-list__link social-list__link-bottom">
-                <svg class="social-list__icon">
-                  <use href="./images/icons.svg#icon-facebook">
-                  </use>
+            <li class="social-networks_item">
+              <a
+                class="social-networks__link social-networks__link--dark-theam"
+                href=""
+              >
+                <svg class="social-networks__icon">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-list__item">
-              <a href="https://linkedin.com" class="social-list__link social-list__link-bottom">
-                <svg class="social-list__icon">
-                  <use href="./images/icons.svg#icon-linkedin">
-                  </use>
+            <li class="social-networks_item">
+              <a
+                class="social-networks__link social-networks__link--dark-theam"
+                href=""
+              >
+                <svg class="social-networks__icon">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-      </div>
 
-      <div class="bottom__box">
-        <form class="form-bottom">
-          <p class="form-bottom__text">Підпишіться на розсилку</p>
-          <div class="form-bottom__card">
-            <input type="email" class="form-bottom__input" placeholder="E-mail">
-            <button type="submit" class="form-bottom__submit">
-              <span class="submit-text">Підписатися</span>
-              <svg class="form-bottom__icon">
-                <use href="./images/icon-modal.svg#icon-icon-send">
-                </use>
+        <!-- Form subscription -->
+        <form class="subscription" name="subscription" autocomplete="on">
+          <p class="subscription__text">Підпишіться на розсилку</p>
+          <div class="subscription__form-container">
+            <input
+              type="email"
+              class="subscription__input-email"
+              name="email"
+              placeholder="E-mail"
+            />
+            <button class="button subscription__button" type="submit">
+              Підписатися
+              <svg class="subscription__button-icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-send"></use>
               </svg>
             </button>
           </div>
         </form>
       </div>
-    </div>
-  </footer>
-  <div class="mobile js-menu-container" id="mobile">
-    <ul class="mobile__list ">
-      <li class="mobile__item">
-        <div class="current">
-          <a href="./index.html" class="mobile__sate">Студія</a>
-        </div>
-      </li>
-      <li class="mobile__item">
-        <a href="./portfolio.html" class="mobile__sate nav__sate-current">Портфоліо
-        </a>
-      </li>
-      <li class="mobile__item">
-        <a href="#contacts" class="mobile__sate">Контакти
-        </a>
-      </li>
-    </ul>
-    <ul class="mobile-header">
+    </footer>
 
-      <li class="mobile-header__item">
-        <a href="tel:+380961111111" class="mobile-header__link">
-          +38 096 111 11 11</a>
-      </li>
-      <li class="mobile-header__item">
-        <a href="mailto:info@devstudio.com" class="mobile-header__link">
-          info@devstudio.com</a>
-      </li>
-    </ul>
-    <ul class="mobile-social-list">
-      <li class="mobile-social-list__item">
-        <a href="https://instagram.com" class="mobile-social-list__link mobile-social-list__link-bottom">Instagram</a>
-      </li>
-      <li class="mobile-social-list__item">
-        <a href="https://twitter.com" class="mobile-social-list__link mobile-social-list__link-bottom">Twitter</a>
-      </li>
-      <li class="mobile-social-list__item">
-        <a href="https://facebook.com" class="mobile-social-list__link mobile-social-list__link-bottom">Facebook</a>
-      </li>
-      <li class="mobile-social-list__item">
-        <a href="https://linkedin.com" class="mobile-social-list__link mobile-social-list__link-bottom">LinkedIn</a>
-      </li>
-    </ul>
-    <button type="button" class="mobile__button-close js-close-menu">
-      <svg class="mobile-close-icon">
-        <use href="./images/mobile-menu.svg#icon-close"></use>
-      </svg>
-    </button>
-
-  </div>
-  <script src="./js/mobile.js"></script>
-
+  
+  <script src="./js/menu-mobile.js"></script>
 </body>
 
 </html>

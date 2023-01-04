@@ -1,0 +1,69 @@
+.team {
+  background-color: $secondary-background-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.team__webstudio {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -15px;
+  }
+}
+
+.team__member {
+  width: 100%;
+  background-color: $main-background-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 4 * 30px) / 4);
+  }
+}
+
+// .team__foto {
+//   max-width: 450px;
+//   height: 100%;
+//   @media screen and (min-width: 481px) {
+//     max-width: 354px;
+//   }
+// }
+
+.team__card {
+  padding: 30px 24px 24px;
+  @media screen and (min-width: $desktop) {
+    padding: 30px;
+  }
+}
+
+.team__name {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: $average-font-weight;
+}
+
+.team__profession {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: $secondary-color;
+}

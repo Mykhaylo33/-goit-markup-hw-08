@@ -1,0 +1,15 @@
+body {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: $normal-font-weight;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+
+  background-color: $main-background-color;
+  color: $main-color;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
