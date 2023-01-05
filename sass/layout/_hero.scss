@@ -6,7 +6,7 @@
   background-position: center;
   background-size: cover;
   @media screen and (max-width: $tablet) {
-    max-width: $mobile;
+    max-width: $tablet;
     height: 400px;
     background-image: linear-gradient(
         to right,
@@ -38,7 +38,7 @@
     }
   }
 
-  @media screen and (min-width: 481px) and (max-width: $tablet) {
+ @media screen and (min-width: $tablet) {
     max-width: 768px;
     height: 400px;
     background-image: linear-gradient(
@@ -71,8 +71,8 @@
     }
   }
 
-  @media screen and (min-width: 769px) {
-    max-width: 1600px;
+  @media screen and (min-width: $desktop) {
+    max-width: $desktop;
     height: 600px;
     padding: 200px 0;
     background-image: linear-gradient(
